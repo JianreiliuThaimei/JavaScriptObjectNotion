@@ -1,24 +1,13 @@
 # import json
-
-# print("Started Reading JSON file")
-# with open("developer.json", "r") as read_file:
-#     # print("Converting JSON encoded data into Python dictionary")
-#     developer = json.load(read_file)
-#     print("Converting JSON encoded data into Python dictionary")
-#     print("Decoding JSON Data From File")
-#     print("Printing JSON values using key")
-#     print(developer["name"])
-#     print(developer["salary"])
-#     print(developer["skills"])
-#     print(developer["email"])
-#     print("Done reading json file")
+# f = open('data.json')
+# data = json.load(f)
+# for i in data['emp_details']:
+#     print(i)
+#     print(type(data))
+# f.close()
 
 import json
-print("Started Reading JSON file")
-with open("developer.json", "r") as read_file:
-    print("Converting JSON encoded data into Python dictionary")
-    developer = json.load(read_file)
-    print("Decoded JSON Data From File")
-    for key, value in developer.items():
-        print(key, ":", value)
-    print("Done reading json file")
+with open("user.json","r") as f:
+    x=json.load(f)
+print(x)
+print(type(x))

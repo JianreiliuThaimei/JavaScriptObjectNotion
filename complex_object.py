@@ -11,10 +11,10 @@
 # print(type(complex_object))
 # print(type(simple_object))
 
-import json
-def encode_complex(object):
-    if insistance(object,complex):
-        return[object.real,object.img]
-    raise TypeError(repr(object)+"is not JSON serialized")
-complex_obj = json.dumps(2 + 3j,default=encode_complex)
-print(complex_obj)
+# import json
+# def encode_complex(object):
+#     if inistance(object,complex):
+#         return[object.real,object.img]
+#     raise TypeError(repr(object)+"is not JSON serialized")
+# complex_obj = json.dumps(2 + 3j,default=encode_complex)
+# print(complex_obj)
